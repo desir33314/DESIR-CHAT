@@ -1,0 +1,95 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Public user profile and identity information in DESIR CHAT",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique user ID" },
+        "username": { "type": "string", "description": "Unique alphanumeric username", "maxLength": 32, "pattern": "^[a-zA-Z0-9_]+$" },
+        "displayName": { "type": "string", "description": "User visible name", "maxLength": 60 },
+        "email": { "type": "string", "description": "User email address", "maxLength": 120 },
+        "avatarUrl": { "type": "string", "description": "URL to avatar image", "maxLength": 500 },
+        "bio": { "type": "string", "description": "Short user biography", "maxLength": 200 },
+        "statusMessage": { "type": "string", "description": "Custom status message", "maxLength": 100 },
+        "isOnline": { "type": "boolean", "description": "Real-time presence status" },
+        "lastSeen": { "type": "string", "format": "date-time", "description": "Timestamp of last activity" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Account creation time" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Profile update time" }
+      },
+      "required": ["id", "username", "displayName", "createdAt"]
+    },
+    "Chat": {
+      "title": "Chat",
+      "description": "Conversation between two users or a group chat",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique conversation ID" },
+        "type": { "type": "string", "enum": ["direct", "group"], "description": "Type of conversation" },
+        "title": { "type": "string", "description": "Group name or conversation title", "maxLength": 80 },
+        "avatarUrl": { "type": "string", "description": "Group avatar URL", "maxLength": 500 },
+        "participantIds": { "type": "array", "description": "List of participant user IDs" },
+        "createdById": { "type": "string", "description": "Creator user ID" },
+        "lastMessageText": { "type": "string", "description": "Snippet of last message", "maxLength": 250 },
+        "lastMessageTimestamp": { "type": "string", "format": "date-time", "description": "Time of last message" },
+        "lastMessageSenderId": { "type": "string", "description": "Sender of last message" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Last activity timestamp" }
+      },
+      "required": ["id", "type", "participantIds", "createdAt"]
+    },
+    "Message": {
+      "title": "Message",
+      "description": "Individual message sent in a conversation",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique message ID" },
+        "chatId": { "type": "string", "description": "Target conversation ID" },
+        "senderId": { "type": "string", "description": "Sender user ID" },
+        "senderName": { "type": "string", "description": "Sender display name", "maxLength": 60 },
+        "text": { "type": "string", "description": "Message text content", "maxLength": 4000 },
+        "attachmentType": { "type": "string", "enum": ["none", "image", "video", "audio", "file"], "description": "Type of media attached" },
+        "attachmentUrl": { "type": "string", "description": "URL to media file", "maxLength": 500 },
+        "attachmentName": { "type": "string", "description": "File original name", "maxLength": 120 },
+        "attachmentSize": { "type": "number", "description": "File size in bytes" },
+        "audioDuration": { "type": "number", "description": "Duration in seconds for voice notes" },
+        "status": { "type": "string", "enum": ["sending", "sent", "delivered", "read"], "description": "Delivery status" },
+        "readBy": { "type": "array", "description": "List of user IDs who have read this message" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Timestamp message was created" }
+      },
+      "required": ["id", "chatId", "senderId", "createdAt"]
+    },
+    "FriendRequest": {
+      "title": "FriendRequest",
+      "description": "Friend request between two users",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique request ID" },
+        "fromUserId": { "type": "string", "description": "Requester user ID" },
+        "toUserId": { "type": "string", "description": "Target user ID" },
+        "status": { "type": "string", "enum": ["pending", "accepted", "declined"], "description": "Request state" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Response timestamp" }
+      },
+      "required": ["id", "fromUserId", "toUserId", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User profiles accessible to verified application members"
+    },
+    "/chats/{chatId}": {
+      "schema": { "$ref": "#/entities/Chat" },
+      "description": "Conversations accessible only to participants"
+    },
+    "/chats/{chatId}/messages/{messageId}": {
+      "schema": { "$ref": "#/entities/Message" },
+      "description": "Messages inside a conversation subcollection"
+    },
+    "/friendRequests/{requestId}": {
+      "schema": { "$ref": "#/entities/FriendRequest" },
+      "description": "Friend requests between users"
+    }
+  }
+}

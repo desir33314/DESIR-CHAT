@@ -1,0 +1,225 @@
+{
+  "users": [
+    {
+      "id": "usr_desir_support",
+      "username": "desir_support",
+      "displayName": "DESIR Assistant",
+      "email": "support@desirchat.app",
+      "passwordHash": "da5ee4e89c375bb224d7a997d60a331874569706c93b7a6e6523f68750b5f3d87d72dd8f6cf939459727eb941eafa05da2358bbd1e99ecc5dbd938bf9c9a2f66",
+      "salt": "6ad0e4254ddefad4cd3723eddc16340b",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80",
+      "bio": "Ofisyèl Sipò DESIR CHAT. Byenvini sou platfòm lan!",
+      "statusMessage": "Toujou disponib pou ede w / Always here to help",
+      "isOnline": true,
+      "lastSeen": "2026-10-10T02:14:26.586Z",
+      "createdAt": "2026-10-03T02:14:26.587Z",
+      "updatedAt": "2026-10-10T02:14:26.587Z"
+    },
+    {
+      "id": "usr_jean_haiti",
+      "username": "jean_bap",
+      "displayName": "Jean Boss",
+      "email": "jean@desirchat.app",
+      "passwordHash": "d3673a3135d0256ba5c573027668d49ec35a06335fcd92588c3bb66efe080d6e235a15f40ef048063449948ab938561e0576e362ea20a51eb0a24b1847ae47f0",
+      "salt": "7a6be12cd6e592bfeee360629fce6cdd",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80",
+      "bio": "Enjenyè lojisyèl nan Pòtoprens. Fanatik mizik Konpa.",
+      "statusMessage": "Nan travay sou nouvo pwojè 🇭🇹",
+      "isOnline": true,
+      "lastSeen": "2026-10-10T02:45:57.288Z",
+      "createdAt": "2026-10-05T02:14:26.587Z",
+      "updatedAt": "2026-10-10T02:46:37.244Z",
+      "isSuspended": false
+    },
+    {
+      "id": "usr_marie_claire",
+      "username": "marie_claire",
+      "displayName": "Marie-Claire Laurent",
+      "email": "marie@desirchat.app",
+      "passwordHash": "4af2e8b0d35aa6b819d94d36cd4d32f9d1683a1912e53adcf3f607ac720f5ea6317d3bcd8f28ea128ed2cbb0bf794527cdad30955dbf03954a7dd4e87e0088b2",
+      "salt": "0f4b93a5268ae527c78a7c8e98848c03",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+      "bio": "Designer UI & Fotograf. M renmen kominikasyon klè!",
+      "statusMessage": "Koute vokal yo pita 🎵",
+      "isOnline": false,
+      "lastSeen": "2026-10-10T01:44:26.587Z",
+      "createdAt": "2026-10-06T02:14:26.587Z",
+      "updatedAt": "2026-10-10T02:14:26.587Z"
+    },
+    {
+      "id": "usr_c2c15284-78e8-4851-aa26-b49d4da759f4",
+      "username": "desir",
+      "displayName": "DESIR GERLSON",
+      "email": "desirgerlson00@gmail.com",
+      "passwordHash": "abdad6fac8575e8d4c70dfb3846dce5093b0357bd47d78bbaded4d338e6bee8abfc0e1d9f1276abfae63889e91cc134352ca62aa5fafc245c0646495e5eb6e91",
+      "salt": "0f26703475c22cb301671eb21ef0d684",
+      "avatarUrl": "/api/files/d0cc75c5-b791-41eb-8ff8-3763065299a3.jpg",
+      "bio": "Konekte sou DESIR CHAT.",
+      "statusMessage": "Disponib",
+      "isOnline": true,
+      "lastSeen": "2026-10-10T02:45:52.862Z",
+      "createdAt": "2026-10-10T02:31:37.029Z",
+      "updatedAt": "2026-10-10T02:45:52.862Z"
+    },
+    {
+      "id": "usr_admin_d5c2ab47",
+      "username": "playboydesir",
+      "displayName": "Mèt Desir",
+      "email": "playboydesir@gmail.com",
+      "passwordHash": "6cc8432882dc9e49ae7f53c7d79c8f41f5688e1cb9f91cdb7a69b5aeb6b0b594f12616cc52e67bb6bf3d7ef9b7e003fc1d81d7f15d151dee4c80e3530892dc0e",
+      "salt": "288f18284780c9a7cec4c107c6ea4b6a",
+      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=admin&backgroundColor=1e1b4b",
+      "bio": "Ofisyèl Administratè DESIR CHAT.",
+      "statusMessage": "Sekirite & Jesyon Sistèm",
+      "isOnline": true,
+      "role": "admin",
+      "isSuspended": false,
+      "lastSeen": "2026-10-10T02:46:12.738Z",
+      "createdAt": "2026-10-10T02:46:12.738Z",
+      "updatedAt": "2026-10-10T02:46:12.738Z"
+    }
+  ],
+  "chats": [
+    {
+      "id": "chat_welcome_support",
+      "type": "direct",
+      "title": "DESIR Assistant",
+      "participantIds": [
+        "usr_desir_support",
+        "usr_jean_haiti",
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4",
+        "usr_admin_d5c2ab47"
+      ],
+      "createdById": "usr_desir_support",
+      "createdAt": "2026-10-08T02:14:26.587Z",
+      "updatedAt": "2026-10-10T02:33:08.236Z"
+    },
+    {
+      "id": "chat_group_haiti_tech",
+      "type": "group",
+      "title": "🇭🇹 Ayiti Tech & Devs",
+      "avatarUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&auto=format&fit=crop&q=80",
+      "participantIds": [
+        "usr_desir_support",
+        "usr_jean_haiti",
+        "usr_marie_claire",
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4",
+        "usr_admin_d5c2ab47"
+      ],
+      "createdById": "usr_jean_haiti",
+      "createdAt": "2026-10-07T02:14:26.587Z",
+      "updatedAt": "2026-10-10T02:20:31.357Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_welcome_1",
+      "chatId": "chat_welcome_support",
+      "senderId": "usr_desir_support",
+      "senderName": "DESIR Assistant",
+      "senderAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80",
+      "text": "Byenvini sou DESIR CHAT! Ou ka voye mesaj tèks, anrejistre vwa w an tan reyèl, pataje foto, epi kreye gwoup fasilman. Teste mikwofòn lan pou voye yon vokal!",
+      "attachmentType": "none",
+      "status": "read",
+      "readBy": [
+        "usr_desir_support",
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4"
+      ],
+      "createdAt": "2026-10-09T02:14:26.587Z"
+    },
+    {
+      "id": "msg_group_1",
+      "chatId": "chat_group_haiti_tech",
+      "senderId": "usr_jean_haiti",
+      "senderName": "Jean-Baptiste Pierre",
+      "senderAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80",
+      "text": "Alo tout moun! DESIR CHAT vrèman rapid sou telefòn Android mwen an. Kijan nou wè interface la?",
+      "attachmentType": "none",
+      "status": "read",
+      "readBy": [
+        "usr_jean_haiti",
+        "usr_desir_support",
+        "usr_marie_claire",
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4"
+      ],
+      "createdAt": "2026-10-09T22:14:26.587Z"
+    },
+    {
+      "id": "msg_group_2",
+      "chatId": "chat_group_haiti_tech",
+      "senderId": "usr_marie_claire",
+      "senderName": "Marie-Claire Laurent",
+      "senderAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+      "text": "Koulè ble elektrik ak nwa nèt sa a bèl anpil! Pataje kèk foto oswa vwa nou tande.",
+      "attachmentType": "none",
+      "status": "read",
+      "readBy": [
+        "usr_jean_haiti",
+        "usr_desir_support",
+        "usr_marie_claire",
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4"
+      ],
+      "createdAt": "2026-10-10T00:14:26.587Z"
+    },
+    {
+      "id": "msg_0b71d7b1-22eb-4162-8acb-69eafc230d26",
+      "chatId": "chat_group_haiti_tech",
+      "senderId": "usr_jean_haiti",
+      "senderName": "Jean-Baptiste Pierre",
+      "senderAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80",
+      "text": "Mèsi anpil! DESIR CHAT ap fonksyone 100%!",
+      "attachmentType": "none",
+      "status": "read",
+      "readBy": [
+        "usr_jean_haiti",
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4"
+      ],
+      "createdAt": "2026-10-10T02:20:31.357Z"
+    },
+    {
+      "id": "msg_241eec93-b290-4cd3-aae7-c1a4ba870363",
+      "chatId": "chat_welcome_support",
+      "senderId": "usr_c2c15284-78e8-4851-aa26-b49d4da759f4",
+      "senderName": "DESIR GERLSON",
+      "senderAvatar": "https://api.dicebear.com/7.x/bottts/svg?seed=desir&backgroundColor=0f172a",
+      "text": "",
+      "attachmentType": "audio",
+      "attachmentUrl": "/api/files/98578c94-4caa-44fc-9087-1e251cc781c4.webm",
+      "attachmentName": "voice_1791599546944.webm",
+      "attachmentSize": 68094,
+      "audioDuration": 4,
+      "status": "sent",
+      "readBy": [
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4"
+      ],
+      "createdAt": "2026-10-10T02:32:27.648Z"
+    },
+    {
+      "id": "msg_bcbd14c7-a24d-4a52-bdc6-a37a6f63f586",
+      "chatId": "chat_welcome_support",
+      "senderId": "usr_c2c15284-78e8-4851-aa26-b49d4da759f4",
+      "senderName": "DESIR GERLSON",
+      "senderAvatar": "https://api.dicebear.com/7.x/bottts/svg?seed=desir&backgroundColor=0f172a",
+      "text": "Yow",
+      "attachmentType": "none",
+      "status": "sent",
+      "readBy": [
+        "usr_c2c15284-78e8-4851-aa26-b49d4da759f4"
+      ],
+      "createdAt": "2026-10-10T02:33:08.236Z"
+    }
+  ],
+  "friendRequests": [],
+  "sessions": [
+    {
+      "token": "9a9d9e4d68351be9d7ac1e8c23b7677f97385af1628c3e5e648972453be7be05",
+      "userId": "usr_c2c15284-78e8-4851-aa26-b49d4da759f4",
+      "expiresAt": 1794191497031
+    },
+    {
+      "token": "5e9375d039dc58630e8a280ab9e6e9589229d097948a1075f0229c1ea98f3a1f",
+      "userId": "usr_admin_d5c2ab47",
+      "expiresAt": 1794192372739
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DESIR CHAT",
+  "description": "Premium mobile-first real-time messaging application built for Android with instant text, voice messages, media sharing, and multi-language support.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
